@@ -1,0 +1,1 @@
+#This script exists to clear everything
