@@ -1,0 +1,4 @@
+networkx~=3.4.2
+matplotlib~=3.10.3
+colorama~=0.4.6
+
