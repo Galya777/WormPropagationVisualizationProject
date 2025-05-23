@@ -1,0 +1,26 @@
+
+🧠 Архитектурна скица: Worm Propagation Lab
+🛰️ Мрежови сегменти (4):
+Сегмент	Предназначение
+web-net	Уязвими Windows машини с IIS (за Code Red)
+oracle-net	Oracle DB машини (за Voyager)
+bridge-net	Машини с достъп до два сегмента — за „разпространение“
+mon-net	Само мониторинг, визуализация и контрол
+
+
+🗺️ Актуализирана архитектура (15+ VM)
+VM Name	OS / Service	Role	Network Segment
+Web1–5	Windows + IIS	Code Red targets	web-net
+OraDB1–4	Oracle 10g (Linux/Win)	Voyager targets	oracle-net
+Bridge1–3	Dual NICs (web + oracle)	Propagation + infection path	bridge-net
+Mon1	Monitoring server (Linux)	Logs + visualization	mon-net
+Ctrl1	Control / Reset tools	Developer tools	mon-net
+Honeypot1	Oracle but patched	To test fail-safe scenarios	oracle-net
+Honeypot2	Windows patched IIS	To test non-vulnerable targets	web-net
+Връзки:
+
+    Web <—> Oracle: чрез Bridge1–3
+
+    Мониторинг само през контролен интерфейс
+
+    Общ брой: 17 VM, 4 сегмента

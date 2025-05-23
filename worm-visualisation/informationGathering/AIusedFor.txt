@@ -1,0 +1,5 @@
+I tried the project to be developed with as less AI as possible.
+I used chatGPT for management purposes mainly: developing the plan and for information gathering.
+With the chat I found out the information about the viruses, developed the strategy and the network topology.
+Also, it helped me a lot with the documentation.
+Sometimes I used it for debugging tool for fixing errors and explain why a certain error occurs.
