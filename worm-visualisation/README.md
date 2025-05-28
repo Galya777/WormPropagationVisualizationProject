@@ -32,4 +32,4 @@ This project simulates the propagation of two classic computer worms — **Code 
 ├── requirements.txt # Python dependencies
 └── README.md # This file
 
-##Quick Demo Video: [worm]((https://www.youtube.com/watch?v=4hoI67Z1hKo))
+##Quick Demo Video: [worm](https://www.youtube.com/watch?v=4hoI67Z1hKo)
