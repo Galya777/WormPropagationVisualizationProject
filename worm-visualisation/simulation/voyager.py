@@ -26,8 +26,8 @@ for node in G.nodes():
 infected = set(["oracle1"])
 
 def log_infection(node, worm_name):
-    os.makedirs("/vagrant/logs", exist_ok=True)
-    with open(f"/vagrant/logs/{worm_name.lower()}.log", "a") as f:
+    os.makedirs("/home/galya777/PycharmProjects/WormPropagationVisualizationProject/worm-visualisation/vagrant/logs", exist_ok=True)
+    with open(f"/home/galya777/PycharmProjects/WormPropagationVisualizationProject/worm-visualisation/vagrant/logs/{worm_name.lower()}.log", "a") as f:
         timestamp = datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")
         f.write(f"{timestamp} {worm_name} infected {node}\n")
 

@@ -28,7 +28,7 @@ def follow_log(filepath, worm_name):
 
 def main():
     parser = argparse.ArgumentParser(description="Worm infection log monitor")
-    parser.add_argument("--log-dir", default="/vagrant/logs/", help="Directory with log files")
+    parser.add_argument("--log-dir", default="/home/galya777/PycharmProjects/WormPropagationVisualizationProject/worm-visualisation/vagrant/logs/", help="Directory with log files")
     parser.add_argument("--files", nargs="+", default=["code_red.log", "voyager.log"], help="Log files to monitor")
     args = parser.parse_args()
 

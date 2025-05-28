@@ -1,6 +1,6 @@
 import os
 
-LOG_DIR = "/vagrant/logs/"
+LOG_DIR = "/home/galya777/PycharmProjects/WormPropagationVisualizationProject/worm-visualisation/vagrant/logs/"
 FILES = ["code_red.log", "voyager.log"]
 
 def reset_logs():

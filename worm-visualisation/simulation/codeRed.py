@@ -28,8 +28,8 @@ for node in G.nodes():
 infected = set(["web1"])  # fixed starting point for reproducibility
 
 def log_infection(node, worm_name):
-    os.makedirs("/vagrant/logs", exist_ok=True)
-    with open(f"/vagrant/logs/{worm_name.lower()}.log", "a") as f:
+    os.makedirs("//home/galya777/PycharmProjects/WormPropagationVisualizationProject/worm-visualisation/networkVMs/.vagrant/logs", exist_ok=True)
+    with open(f"/home/galya777/PycharmProjects/WormPropagationVisualizationProject/worm-visualisation/vagrant/logs/{worm_name.lower()}.log", "a") as f:
         timestamp = datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")
         f.write(f"{timestamp} {worm_name} infected {node}\n")
 
@@ -46,7 +46,7 @@ def code_red_propagation(G, infected):
     return new_infected
 
 # Simulation loop
-worm_name = "CodeRed"
+worm_name = "Code_red"
 steps = 10
 for i in range(steps):
     newly = code_red_propagation(G, infected)
